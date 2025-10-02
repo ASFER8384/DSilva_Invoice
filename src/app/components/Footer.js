@@ -6,22 +6,23 @@ export default function Footer() {
       <div
         style={{
           height: "45vh",
-          padding: "50px",
+          padding: "100px 50px 50px 50px",
           background: "black",
           display: "flex",
           gap: "50px",
+          // marginTop: "50px",
         }}
       >
         <div style={{ border: "0px solid white", width: "40%" }}>
           <div
             style={{
-              width: "60px",
-              height: "60px",
+              width: "120px",
+              height: "80px",
               // marginBottom: "15px",
             }}
           >
             <img
-              src="/assets/Logo.png" // make sure your logo is inside public folder
+              src="/assets/Logo.png"
               alt="Logo"
               style={{
                 width: "100%",
@@ -39,9 +40,8 @@ export default function Footer() {
               letterSpacing: "1px",
             }}
           >
-            At Golden Tower Auto Paints, we have proudly served the automotive
-            industry for over 25 years, delivering premium auto paints,
-            refinishing solutions, and unmatched customer service.
+            Cherry Pickers Equipment is a platform and your perfect partner to
+            trade used access platforms and other construction equipment.
           </span>
         </div>
         <div
@@ -54,8 +54,8 @@ export default function Footer() {
         >
           <div
             style={{
-              //   border: "1px solid white",
-              width: "80%",
+              // border: "1px solid white",
+              width: "90%",
               display: "flex",
               justifyContent: "space-between",
               height: "90%",
@@ -63,7 +63,7 @@ export default function Footer() {
           >
             <div
               style={{
-                width: "fit-content",
+                width: "40%",
                 border: "0px solid white",
                 display: "flex",
                 flexDirection: "column",
@@ -115,7 +115,7 @@ export default function Footer() {
                     letterSpacing: ".5px",
                   }}
                 >
-                  Services
+                  Products
                 </span>
                 <span
                   style={{
@@ -124,7 +124,7 @@ export default function Footer() {
                     letterSpacing: ".5px",
                   }}
                 >
-                  Product
+                  Spare Parts
                 </span>
                 <span
                   style={{
@@ -133,13 +133,13 @@ export default function Footer() {
                     letterSpacing: ".5px",
                   }}
                 >
-                  FAQ
+                  Contact Us
                 </span>
               </div>
             </div>
             <div
               style={{
-                width: "fit-content",
+                width: "40%",
                 border: "0px solid white",
                 display: "flex",
                 flexDirection: "column",
@@ -156,7 +156,7 @@ export default function Footer() {
                   letterSpacing: ".5px",
                 }}
               >
-                Service Links
+                Supports Links
               </span>
               <div
                 style={{
@@ -173,7 +173,7 @@ export default function Footer() {
                     letterSpacing: ".5px",
                   }}
                 >
-                  Painting
+                  test1@gmail.com
                 </span>
                 <span
                   style={{
@@ -182,7 +182,7 @@ export default function Footer() {
                     letterSpacing: ".5px",
                   }}
                 >
-                  Refinishing
+                  test2@gmail.com
                 </span>
                 <span
                   style={{
@@ -191,7 +191,7 @@ export default function Footer() {
                     letterSpacing: ".5px",
                   }}
                 >
-                  Workshops
+                  +971 5655746478
                 </span>
                 <span
                   style={{
@@ -200,7 +200,7 @@ export default function Footer() {
                     letterSpacing: ".5px",
                   }}
                 >
-                  Innovation
+                  +971 6574648908
                 </span>
                 <span
                   style={{
@@ -209,13 +209,13 @@ export default function Footer() {
                     letterSpacing: ".5px",
                   }}
                 >
-                  Support
+                  Whatsapp Chat
                 </span>
               </div>
             </div>
             <div
               style={{
-                width: "fit-content",
+                width: "40%",
                 border: "0px solid white",
                 display: "flex",
                 flexDirection: "column",
@@ -232,7 +232,7 @@ export default function Footer() {
                   letterSpacing: ".5px",
                 }}
               >
-                Social Links
+                Head Office Links
               </span>
               <div
                 style={{
@@ -249,34 +249,8 @@ export default function Footer() {
                     letterSpacing: ".5px",
                   }}
                 >
-                  Linkdin
-                </span>
-                <span
-                  style={{
-                    color: "white",
-                    fontSize: "12px",
-                    letterSpacing: ".5px",
-                  }}
-                >
-                  Email
-                </span>
-                <span
-                  style={{
-                    color: "white",
-                    fontSize: "12px",
-                    letterSpacing: ".5px",
-                  }}
-                >
-                  Whatsapp
-                </span>
-                <span
-                  style={{
-                    color: "white",
-                    fontSize: "12px",
-                    letterSpacing: ".5px",
-                  }}
-                >
-                  Phone
+                  Office no 2029., ABN Victor Business center Burjuman Business
+                  Tower, Bur Dubai, Dubai, UAE
                 </span>
               </div>
             </div>
@@ -292,12 +266,12 @@ export default function Footer() {
         }}
       >
         <span
-          style={{ color: "white", fontSize: "12px", letterSpacing: "2px" }}
+          style={{ color: "white", fontSize: "12px", letterSpacing: "0px" }}
         >
-          Copy rights reserved by golden auto mobile
+          All Rights Reserved By Cherry Pickers Equipment
         </span>
         <span
-          style={{ color: "white", fontSize: "12px", letterSpacing: "2px" }}
+          style={{ color: "white", fontSize: "12px", letterSpacing: "0px" }}
         >
           Terms and condition - Privacy & Policy
         </span>

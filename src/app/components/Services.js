@@ -5,30 +5,27 @@ export default function Services() {
   const packages = [
     {
       id: 1,
-      title: "Basic",
-      description:
-        "Simple plan designed to cover essential needs for six months.",
-      image: "/assets/Basic.png",
+      title: "660SJ 2011 DENMARK",
+
+      image: "/assets/Product1.png",
     },
     {
       id: 2,
-      title: "Platinum",
-      description: "Premium package crafted to provide a full value & support.",
-      image: "/assets/Platinum.png",
+      title: "660SJ 2011 DENMARK",
+
+      image: "/assets/Product2.png",
     },
     {
       id: 3,
-      title: "Standard",
-      description:
-        "Balanced option created to offer reliable cover at fair cost.",
-      image: "/assets/Standard.png",
+      title: "660SJ 2011 DENMARK",
+      image: "/assets/Product3.png",
     },
   ];
 
   return (
     <div
       style={{
-        minHeight: "70vh",
+        minHeight: "100vh",
         background: "black",
         display: "flex",
         // justifyContent: "center",
@@ -43,8 +40,8 @@ export default function Services() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "80px",
-          padding: "50px 0px",
+          // height: "80px",
+          padding: "20px 0px",
           marginBottom: "50px",
         }}
       >
@@ -56,22 +53,17 @@ export default function Services() {
             letterSpacing: "2px",
           }}
         >
-          Extend and upgrade your cover for less than <br></br>Đ 1 per day!
+          Our Products
         </span>
       </div>
-      <div style={{ width: "70%", height: "300px", border: "0px solid white" }}>
-        {/* <div
-          style={{ border: "1px solid white", width: "250px", height: "250px" }}
-        >
-          One
-        </div> */}
+      <div style={{ width: "90%", height: "500px", border: "0px solid white" }}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           {(packages || []).map((content, index) => (
             <div
               key={index}
               style={{
-                width: "250px",
-                height: "250px",
+                width: "350px",
+                height: "400px",
                 border: "1px solid white",
                 background: "rgba(255, 255, 255, 0.1)",
                 borderRadius: "16px",
@@ -86,9 +78,9 @@ export default function Services() {
             >
               <div
                 style={{
-                  // border: "1px solid? white",
-                  width: "85%",
-                  height: "70%",
+                  // border: "1px solid white",
+                  width: "100%",
+                  height: "100%",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
@@ -97,10 +89,11 @@ export default function Services() {
               >
                 <div
                   style={{
-                    width: "50px",
-                    height: "50px",
+                    width: "100%",
+                    height: "100%",
                     marginBottom: "20px",
                     position: "relative",
+                    // border: "1px solid white",
                   }}
                 >
                   <Image
@@ -112,25 +105,46 @@ export default function Services() {
                 </div>
                 <span
                   style={{
-                    color: "white",
+                    color: "rgba(213, 162, 53, 1)",
                     marginBottom: "20px",
                     fontSize: "18px",
                   }}
                 >
                   {content?.title}
                 </span>
-                <span
-                  style={{
-                    color: "white",
-                    textAlign: "center",
-                    fontSize: "18px",
-                  }}
-                >
-                  {content?.description}
-                </span>
               </div>
             </div>
           ))}
+        </div>
+        <div
+          style={{
+            // border: "1px solid white",
+            width: "100%",
+            padding: "80px 0px",
+            display: "flex",
+            justifyContent: "center",
+            // marginBottom: "50px",
+          }}
+        >
+          <div
+            style={{
+              width: "150px",
+              height: "40px",
+              // marginTop: top,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              // borderRadius: "20px",
+              backgroundColor: "rgba(213, 162, 53, 0.3)",
+              // marginBottom: "50px",
+            }}
+          >
+            <span
+              style={{ color: "white", fontSize: "12px", letterSpacing: "1px" }}
+            >
+              More Products
+            </span>
+          </div>
         </div>
       </div>
     </div>

@@ -6,36 +6,31 @@ export default function Header() {
   return (
     <div
       style={{
-        height: "80px",
+        height: "120px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         padding: "0px 40px",
       }}
     >
-      {/* Logo */}
-      <div style={{ width: "50px", height: "50px", position: "relative" }}>
+      <div style={{ width: "150px", height: "80px", position: "relative" }}>
         <Image
-          src="/assets/Logo.png" // put logo.png inside /public/assets/
+          src="/assets/Logo.png"
           alt="Logo"
           fill
           style={{ objectFit: "contain" }}
         />
       </div>
 
-      {/* Navigation */}
       <div style={{ color: "white" }}>
         <div style={{ display: "flex", gap: "40px", textDecoration: "none" }}>
           <span>Home</span>
           <span>About</span>
-          <span>Inventory</span>
-          <span>Service</span>
-          <span>FAQ</span>
+          <span>Products</span>
+          <span>Spare Parts</span>
+          <span>Contact Us</span>
         </div>
       </div>
-
-      {/* Button */}
-      <Button content="Contact Now" top="0px" />
     </div>
   );
 }
