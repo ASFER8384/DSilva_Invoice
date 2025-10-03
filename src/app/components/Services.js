@@ -1,18 +1,22 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Services() {
+  const containerRef = useRef(null);
+
   const packages = [
     {
       id: 1,
       title: "660SJ 2011 DENMARK",
-
       image: "/assets/Product1.png",
     },
     {
       id: 2,
       title: "660SJ 2011 DENMARK",
-
       image: "/assets/Product2.png",
     },
     {
@@ -22,49 +26,78 @@ export default function Services() {
     },
   ];
 
+  useEffect(() => {
+    const el = containerRef.current;
+    const cards = el.querySelectorAll(".product-card");
+
+    gsap.from(cards, {
+      opacity: 0,
+      y: 100,
+      duration: 1.2,
+      stagger: 0.3,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    });
+  }, []);
+
   return (
     <div
+      ref={containerRef}
       style={{
         minHeight: "100vh",
         background: "black",
         display: "flex",
-        // justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        // border: "1px solid white",
+        padding: "20px",
       }}
     >
+      {/* Section Heading */}
       <div
         style={{
-          // border: "1px solid white",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          // height: "80px",
+          textAlign: "center",
           padding: "20px 0px",
-          marginBottom: "50px",
+          marginBottom: "30px",
         }}
       >
         <span
           style={{
             color: "rgba(213, 162, 53, 1)",
-            fontSize: "30px",
-            textAlign: "center",
+            fontSize: "26px",
             letterSpacing: "2px",
           }}
         >
           Our Products
         </span>
       </div>
-      <div style={{ width: "90%", height: "500px", border: "0px solid white" }}>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+
+      {/* Product Cards */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "1200px",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "20px",
+            justifyContent: "center",
+          }}
+        >
           {(packages || []).map((content, index) => (
             <div
               key={index}
+              className="product-card"
               style={{
-                width: "350px",
-                height: "400px",
-                border: "1px solid white",
+                flex: "1 1 300px", // grow/shrink with min width 300px
+                maxWidth: "350px",
+                height: "380px",
                 background: "rgba(255, 255, 255, 0.1)",
                 borderRadius: "16px",
                 boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
@@ -74,26 +107,26 @@ export default function Services() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                margin: "0 auto",
               }}
             >
               <div
                 style={{
-                  // border: "1px solid white",
                   width: "100%",
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
+                  padding: "10px",
                 }}
               >
                 <div
                   style={{
                     width: "100%",
-                    height: "100%",
-                    marginBottom: "20px",
+                    height: "70%",
+                    marginBottom: "15px",
                     position: "relative",
-                    // border: "1px solid white",
                   }}
                 >
                   <Image
@@ -106,8 +139,9 @@ export default function Services() {
                 <span
                   style={{
                     color: "rgba(213, 162, 53, 1)",
-                    marginBottom: "20px",
-                    fontSize: "18px",
+                    marginBottom: "10px",
+                    fontSize: "16px",
+                    textAlign: "center",
                   }}
                 >
                   {content?.title}
@@ -116,27 +150,26 @@ export default function Services() {
             </div>
           ))}
         </div>
+
+        {/* More Products Button */}
         <div
           style={{
-            // border: "1px solid white",
             width: "100%",
-            padding: "80px 0px",
+            padding: "50px 0px",
             display: "flex",
             justifyContent: "center",
-            // marginBottom: "50px",
           }}
         >
           <div
             style={{
               width: "150px",
               height: "40px",
-              // marginTop: top,
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              // borderRadius: "20px",
               backgroundColor: "rgba(213, 162, 53, 0.3)",
-              // marginBottom: "50px",
+              cursor: "pointer",
+              borderRadius: "8px",
             }}
           >
             <span
