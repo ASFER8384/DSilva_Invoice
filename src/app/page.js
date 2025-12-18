@@ -203,10 +203,11 @@ export default function Page() {
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", sm: "row" },
+          flexDirection: { xs: "row", sm: "row" },
           justifyContent: "space-between",
           mb: { xs: 3, md: 5 },
           gap: { xs: 2, sm: 0 },
+          alignItems: "start",
         }}
       >
         <Box>
@@ -235,7 +236,7 @@ export default function Page() {
             {invoiceData.email}
           </Typography>
         </Box>
-        <Box sx={{ textAlign: { xs: "left", sm: "right" } }}>
+        <Box sx={{ textAlign: { xs: "right", sm: "right" } }}>
           <Typography
             sx={{
               fontSize: { xs: 10, md: 11 },
