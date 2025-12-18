@@ -409,7 +409,7 @@ export default function Page() {
 
       {/* Summary */}
       <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 3 }}>
-        <Box sx={{ width: { xs: "100%", sm: 250 } }}>
+        <Box sx={{ width: { xs: "50%", sm: 250 } }}>
           <Box
             sx={{
               display: "flex",
@@ -524,7 +524,7 @@ export default function Page() {
             src="/signature.png"
             alt="Thank You"
             sx={{
-              width: { xs: 100, sm: 150, md: 220 },
+              width: { xs: 170, sm: 150, md: 220 },
               height: "auto",
               objectFit: "contain",
             }}
