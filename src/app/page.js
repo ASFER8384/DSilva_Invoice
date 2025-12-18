@@ -479,7 +479,7 @@ export default function Page() {
         }}
       >
         {/* Bank Details */}
-        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "65%", sm: "65%" } }}>
+        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "75%", sm: "75%" } }}>
           <Typography
             sx={{
               fontSize: { xs: 16, sm: 16, md: 16 },
