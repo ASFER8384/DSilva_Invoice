@@ -479,7 +479,7 @@ export default function Page() {
         }}
       >
         {/* Bank Details */}
-        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "85%", sm: "85%" } }}>
+        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "100%", sm: "100%" } }}>
           <Typography
             sx={{
               fontSize: { xs: 16, sm: 16, md: 16 },
@@ -525,8 +525,8 @@ export default function Page() {
             src="/signature.png"
             alt="Thank You"
             sx={{
-              width: { xs: 300, sm: 300, md: 300 },
-              height: 200,
+              width: { xs: 350, sm: 350, md: 350 },
+              height: 230,
               objectFit: "contain",
             }}
             onError={(e) => {
