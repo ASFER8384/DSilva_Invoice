@@ -525,7 +525,7 @@ export default function Page() {
             src="/signature.png"
             alt="Thank You"
             sx={{
-              width: { xs: 280, sm: 280, md: 280 },
+              width: { xs: 300, sm: 300, md: 300 },
               height: "auto",
               objectFit: "contain",
             }}
