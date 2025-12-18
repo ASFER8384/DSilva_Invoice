@@ -479,7 +479,7 @@ export default function Page() {
         }}
       >
         {/* Bank Details */}
-        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "55%", sm: "60%" } }}>
+        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "65%", sm: "65%" } }}>
           <Typography
             sx={{
               fontSize: { xs: 16, sm: 16, md: 16 },
@@ -755,9 +755,9 @@ export default function Page() {
                         handleItemChange(index, "description", e.target.value)
                       }
                       size="small"
-                      sx={{ mb: 3 }}
+                      sx={{ mb: 2 }}
                     />
-                    <Grid container spacing={3}>
+                    <Grid container spacing={2}>
                       {/* <Grid item xs={4}> */}
                         <TextField
                           fullWidth
