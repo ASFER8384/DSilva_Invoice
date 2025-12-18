@@ -479,10 +479,10 @@ export default function Page() {
         }}
       >
         {/* Bank Details */}
-        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "55%", sm: "60%" } }}>
+        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "60%", sm: "60%" } }}>
           <Typography
             sx={{
-              fontSize: { xs: 8, sm: 10, md: 11 },
+              fontSize: { xs: 16, sm: 16, md: 16 },
               fontWeight: "bold",
               letterSpacing: 1,
               mb: { xs: 1, md: 2 },
@@ -596,11 +596,11 @@ export default function Page() {
                 icon={<Edit3 size={18} />}
                 iconPosition="start"
               />
-              <Tab
+              {/* <Tab
                 label="Preview"
                 icon={<Eye size={18} />}
                 iconPosition="start"
-              />
+              /> */}
             </Tabs>
           </Box>
 
@@ -983,7 +983,7 @@ export default function Page() {
           )}
 
           {/* Preview Tab */}
-          {activeTab === 1 && (
+          {/* {activeTab === 1 && (
             <Box
               sx={{
                 border: "1px solid #e0e0e0",
@@ -994,7 +994,7 @@ export default function Page() {
             >
               <PreviewInvoice ref={invoiceRef} />
             </Box>
-          )}
+          )} */}
 
           {/* Download Button */}
           <Box
