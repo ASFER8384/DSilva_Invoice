@@ -482,10 +482,10 @@ export default function Page() {
         <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "100%", sm: "100%" } }}>
           <Typography
             sx={{
-              fontSize: { xs: 16, sm: 16, md: 16 },
+              fontSize: { xs: 16, sm: 14, md: 14 },
               fontWeight: "bold",
               letterSpacing: 1,
-              mb: { xs: 1, md: 2 },
+              mb: { xs: 1, md: 1 },
               color: "#333",
             }}
           >
@@ -493,8 +493,8 @@ export default function Page() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 14, sm: 14, md: 14 },
-              lineHeight: { xs: 1.6, md: 1.8 },
+              fontSize: { xs: 14, sm: 12, md: 12 },
+              lineHeight: { xs: 1.6, md: 1.6 },
               color: "#333",
               wordBreak: "break-word",
             }}
@@ -525,8 +525,8 @@ export default function Page() {
             src="/signature.png"
             alt="Thank You"
             sx={{
-              width: { xs: 350, sm: 350, md: 350 },
-              height: 230,
+              width: { xs: 350, sm: 200, md: 200 },
+              height: { xs: 230, sm: "auto", md: "auto" },
               objectFit: "contain",
             }}
             onError={(e) => {
