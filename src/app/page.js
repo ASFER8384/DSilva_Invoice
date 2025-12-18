@@ -479,7 +479,7 @@ export default function Page() {
         }}
       >
         {/* Bank Details */}
-        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "60%", sm: "60%" } }}>
+        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "55%", sm: "60%" } }}>
           <Typography
             sx={{
               fontSize: { xs: 16, sm: 16, md: 16 },
@@ -755,10 +755,10 @@ export default function Page() {
                         handleItemChange(index, "description", e.target.value)
                       }
                       size="small"
-                      sx={{ mb: 1 }}
+                      sx={{ mb: 3 }}
                     />
-                    <Grid container spacing={1}>
-                      <Grid item xs={4}>
+                    <Grid container spacing={3}>
+                      {/* <Grid item xs={4}> */}
                         <TextField
                           fullWidth
                           label="Price"
@@ -769,8 +769,8 @@ export default function Page() {
                           }
                           size="small"
                         />
-                      </Grid>
-                      <Grid item xs={4}>
+                      {/* </Grid> */}
+                      {/* <Grid item xs={4}> */}
                         <TextField
                           fullWidth
                           label="Qty"
@@ -781,8 +781,8 @@ export default function Page() {
                           }
                           size="small"
                         />
-                      </Grid>
-                      <Grid item xs={4}>
+                      {/* </Grid> */}
+                      {/* <Grid item xs={4}> */}
                         <TextField
                           fullWidth
                           label="Total"
@@ -790,7 +790,7 @@ export default function Page() {
                           size="small"
                           disabled
                         />
-                      </Grid>
+                      {/* </Grid> */}
                     </Grid>
                   </Paper>
                 ))}
