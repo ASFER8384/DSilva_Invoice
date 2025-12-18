@@ -4,7 +4,10 @@
       "Bash(git remote set-url:*)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd DSilva Invoice Generator with editable fields and PDF download\n\n- Invoice generator with exact design matching reference\n- Editable client info, invoice details, items, and bank details\n- Dynamic add/remove items functionality\n- PDF download using html2pdf.js\n- Fully responsive for mobile and desktop\n- Logo and signature images from public folder\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm view:*)",
+      "Bash(npm install:*)",
+      "Bash(npm audit fix:*)"
     ]
   }
 }
