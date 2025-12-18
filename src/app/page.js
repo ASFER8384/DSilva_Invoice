@@ -118,7 +118,7 @@ export default function Page() {
     <Box
       ref={ref}
       sx={{
-        // p: { xs: 2, sm: 3, md: 4 },
+        p: { xs: 2, sm: 3, md: 4 },
         backgroundColor: "#fff",
         fontFamily: "'Arial', sans-serif",
         maxWidth: 800,
@@ -471,21 +471,20 @@ export default function Page() {
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", sm: "row" },
+          flexDirection: "row",
           justifyContent: "space-between",
-          alignItems: { xs: "flex-start", sm: "flex-end" },
+          alignItems: "flex-end",
           mt: { xs: 4, md: 5 },
-          gap: { xs: 3, sm: 0 },
         }}
       >
         {/* Bank Details */}
-        <Box>
+        <Box sx={{ flex: "0 0 auto", maxWidth: { xs: "55%", sm: "60%" } }}>
           <Typography
             sx={{
-              fontSize: { xs: 10, md: 11 },
+              fontSize: { xs: 8, sm: 10, md: 11 },
               fontWeight: "bold",
               letterSpacing: 1,
-              mb: 2,
+              mb: { xs: 1, md: 2 },
               color: "#333",
             }}
           >
@@ -493,9 +492,10 @@ export default function Page() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 12, md: 13 },
-              lineHeight: 1.8,
+              fontSize: { xs: 9, sm: 12, md: 13 },
+              lineHeight: { xs: 1.6, md: 1.8 },
               color: "#333",
+              wordBreak: "break-word",
             }}
           >
             Bank: {invoiceData.bankName}
@@ -514,8 +514,9 @@ export default function Page() {
         <Box
           sx={{
             display: "flex",
-            justifyContent: { xs: "center", sm: "flex-end" },
-            width: { xs: "100%", sm: "auto" },
+            justifyContent: "flex-end",
+            alignItems: "flex-end",
+            flex: "0 0 auto",
           }}
         >
           <Box
@@ -523,7 +524,7 @@ export default function Page() {
             src="/signature.png"
             alt="Thank You"
             sx={{
-              width: { xs: 150, sm: 180, md: 220 },
+              width: { xs: 100, sm: 150, md: 220 },
               height: "auto",
               objectFit: "contain",
             }}
@@ -536,9 +537,10 @@ export default function Page() {
             sx={{
               display: "none",
               fontFamily: "'Brush Script MT', 'Segoe Script', cursive",
-              fontSize: { xs: 36, sm: 42, md: 48 },
+              fontSize: { xs: 24, sm: 36, md: 48 },
               fontStyle: "italic",
               color: "#333",
+              textAlign: "right",
             }}
           >
             thank you
