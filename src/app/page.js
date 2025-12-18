@@ -524,7 +524,7 @@ export default function Page() {
             src="/signature.png"
             alt="Thank You"
             sx={{
-              width: { xs: 220, sm: 220, md: 220 },
+              width: { xs: 280, sm: 280, md: 280 },
               height: "auto",
               objectFit: "contain",
             }}
@@ -533,7 +533,7 @@ export default function Page() {
               e.target.nextSibling.style.display = "block";
             }}
           />
-          <Typography
+          {/* <Typography
             sx={{
               display: "none",
               fontFamily: "'Brush Script MT', 'Segoe Script', cursive",
@@ -544,7 +544,7 @@ export default function Page() {
             }}
           >
             thank you
-          </Typography>
+          </Typography> */}
         </Box>
       </Box>
     </Box>
