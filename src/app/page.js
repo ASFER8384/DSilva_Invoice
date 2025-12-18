@@ -268,7 +268,6 @@ export default function Page() {
       {/* Divider */}
       <Divider sx={{ borderColor: "#333", borderWidth: 1, mb: 3 }} />
 
-      {/* Items Table Header */}
       <Box
         sx={{
           display: "flex",
