@@ -96,8 +96,8 @@ export default function Page() {
   const downloadPDF = async () => {
     const html2pdf = (await import("html2pdf.js")).default;
 
-    // const element = invoiceRef.current;
-    // if (!element) return;
+    const element = invoiceRef.current;
+    if (!element) return;
 
     const opt = {
       margin: [10, 10, 10, 10],
@@ -596,11 +596,11 @@ export default function Page() {
                 icon={<Edit3 size={18} />}
                 iconPosition="start"
               />
-              {/* <Tab
+              <Tab
                 label="Preview"
                 icon={<Eye size={18} />}
                 iconPosition="start"
-              /> */}
+              />
             </Tabs>
           </Box>
 
@@ -983,7 +983,7 @@ export default function Page() {
           )}
 
           {/* Preview Tab */}
-          {/* {activeTab === 1 && (
+          {activeTab === 1 && (
             <Box
               sx={{
                 border: "1px solid #e0e0e0",
@@ -994,7 +994,7 @@ export default function Page() {
             >
               <PreviewInvoice ref={invoiceRef} />
             </Box>
-          )} */}
+          )}
 
           {/* Download Button */}
           <Box
