@@ -493,7 +493,7 @@ export default function Page() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 9, sm: 12, md: 13 },
+              fontSize: { xs: 14, sm: 14, md: 14 },
               lineHeight: { xs: 1.6, md: 1.8 },
               color: "#333",
               wordBreak: "break-word",
@@ -526,7 +526,7 @@ export default function Page() {
             alt="Thank You"
             sx={{
               width: { xs: 300, sm: 300, md: 300 },
-              height: 250,
+              height: 200,
               objectFit: "contain",
             }}
             onError={(e) => {
