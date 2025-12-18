@@ -137,8 +137,8 @@ export default function Page() {
       >
         <Box
           sx={{
-            width: { xs: 120, sm: 150, md: 180 },
-            height: { xs: 120, sm: 150, md: 150 },
+            width: { xs: 250, sm: 250, md: 250 },
+            height: { xs: 250, sm: 250, md: 250 },
             // border: "2px solid #333",
             borderRadius: "50%",
             display: "flex",
