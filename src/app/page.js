@@ -96,8 +96,8 @@ export default function Page() {
   const downloadPDF = async () => {
     const html2pdf = (await import("html2pdf.js")).default;
 
-    const element = invoiceRef.current;
-    if (!element) return;
+    // const element = invoiceRef.current;
+    // if (!element) return;
 
     const opt = {
       margin: [10, 10, 10, 10],
