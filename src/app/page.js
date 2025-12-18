@@ -77,7 +77,11 @@ export default function Page() {
       ...invoiceData,
       items: [
         ...invoiceData.items,
-        { description: `Item ${invoiceData.items.length + 1}`, unitPrice: 0, qty: 1 },
+        {
+          description: `Item ${invoiceData.items.length + 1}`,
+          unitPrice: 0,
+          qty: 1,
+        },
       ],
     });
   };
@@ -217,10 +221,14 @@ export default function Page() {
           >
             ISSUED TO:
           </Typography>
-          <Typography sx={{ fontSize: { xs: 13, md: 14 }, mb: 0.5, color: "#333" }}>
+          <Typography
+            sx={{ fontSize: { xs: 13, md: 14 }, mb: 0.5, color: "#333" }}
+          >
             {invoiceData.clientName}
           </Typography>
-          <Typography sx={{ fontSize: { xs: 13, md: 14 }, mb: 0.5, color: "#333" }}>
+          <Typography
+            sx={{ fontSize: { xs: 13, md: 14 }, mb: 0.5, color: "#333" }}
+          >
             {invoiceData.company}
           </Typography>
           <Typography sx={{ fontSize: { xs: 13, md: 14 }, color: "#333" }}>
@@ -240,11 +248,18 @@ export default function Page() {
             INVOICE NO:
           </Typography>
           <Typography
-            sx={{ fontSize: { xs: 13, md: 14 }, fontWeight: "bold", mb: 0.5, color: "#333" }}
+            sx={{
+              fontSize: { xs: 13, md: 14 },
+              fontWeight: "bold",
+              mb: 0.5,
+              color: "#333",
+            }}
           >
             #{invoiceData.invoiceNumber}
           </Typography>
-          <Typography sx={{ fontSize: { xs: 13, md: 14 }, mt: 1, color: "#333" }}>
+          <Typography
+            sx={{ fontSize: { xs: 13, md: 14 }, mt: 1, color: "#333" }}
+          >
             {invoiceData.date}
           </Typography>
         </Box>
@@ -322,21 +337,38 @@ export default function Page() {
             py: { xs: 1.5, md: 2 },
           }}
         >
-          <Typography sx={{ fontSize: { xs: 13, md: 14 }, width: "40%", color: "#333" }}>
+          <Typography
+            sx={{ fontSize: { xs: 13, md: 14 }, width: "40%", color: "#333" }}
+          >
             {item.description}
           </Typography>
           <Typography
-            sx={{ fontSize: { xs: 13, md: 14 }, width: "20%", textAlign: "center", color: "#333" }}
+            sx={{
+              fontSize: { xs: 13, md: 14 },
+              width: "20%",
+              textAlign: "center",
+              color: "#333",
+            }}
           >
             {item.unitPrice}
           </Typography>
           <Typography
-            sx={{ fontSize: { xs: 13, md: 14 }, width: "15%", textAlign: "center", color: "#333" }}
+            sx={{
+              fontSize: { xs: 13, md: 14 },
+              width: "15%",
+              textAlign: "center",
+              color: "#333",
+            }}
           >
             {item.qty}
           </Typography>
           <Typography
-            sx={{ fontSize: { xs: 13, md: 14 }, width: "25%", textAlign: "right", color: "#333" }}
+            sx={{
+              fontSize: { xs: 13, md: 14 },
+              width: "25%",
+              textAlign: "right",
+              color: "#333",
+            }}
           >
             ${item.unitPrice * item.qty}
           </Typography>
@@ -386,7 +418,9 @@ export default function Page() {
               mb: 1,
             }}
           >
-            <Typography sx={{ fontSize: { xs: 13, md: 14 }, color: "#333" }}>Total</Typography>
+            <Typography sx={{ fontSize: { xs: 13, md: 14 }, color: "#333" }}>
+              Total
+            </Typography>
             <Typography sx={{ fontSize: { xs: 13, md: 14 }, color: "#333" }}>
               ${calculateSubtotal()}
             </Typography>
@@ -398,7 +432,9 @@ export default function Page() {
               mb: 1,
             }}
           >
-            <Typography sx={{ fontSize: { xs: 13, md: 14 }, color: "#333" }}>Tax</Typography>
+            <Typography sx={{ fontSize: { xs: 13, md: 14 }, color: "#333" }}>
+              Tax
+            </Typography>
             <Typography sx={{ fontSize: { xs: 13, md: 14 }, color: "#333" }}>
               {invoiceData.taxRate}%
             </Typography>
@@ -411,12 +447,20 @@ export default function Page() {
             }}
           >
             <Typography
-              sx={{ fontSize: { xs: 14, md: 16 }, fontWeight: "bold", color: "#333" }}
+              sx={{
+                fontSize: { xs: 14, md: 16 },
+                fontWeight: "bold",
+                color: "#333",
+              }}
             >
               Amount due
             </Typography>
             <Typography
-              sx={{ fontSize: { xs: 14, md: 16 }, fontWeight: "bold", color: "#333" }}
+              sx={{
+                fontSize: { xs: 14, md: 16 },
+                fontWeight: "bold",
+                color: "#333",
+              }}
             >
               ${calculateTotal()}
             </Typography>
@@ -448,7 +492,13 @@ export default function Page() {
           >
             BANK DETAILS
           </Typography>
-          <Typography sx={{ fontSize: { xs: 12, md: 13 }, lineHeight: 1.8, color: "#333" }}>
+          <Typography
+            sx={{
+              fontSize: { xs: 12, md: 13 },
+              lineHeight: 1.8,
+              color: "#333",
+            }}
+          >
             Bank: {invoiceData.bankName}
             <br />
             Account Number: {invoiceData.accountNumber}
@@ -510,7 +560,10 @@ export default function Page() {
       }}
     >
       <Container maxWidth="lg" sx={{ px: { xs: 1, sm: 2, md: 3 } }}>
-        <Paper elevation={3} sx={{ p: { xs: 2, sm: 3, md: 4 }, borderRadius: 2 }}>
+        <Paper
+          elevation={3}
+          sx={{ p: { xs: 2, sm: 3, md: 4 }, borderRadius: 2 }}
+        >
           <Typography
             variant="h4"
             sx={{
@@ -520,7 +573,7 @@ export default function Page() {
               fontSize: { xs: "1.5rem", sm: "2rem", md: "2.125rem" },
             }}
           >
-            Invoice Generator
+            DSILVA MANAGEMENT SOLUTION
           </Typography>
 
           {/* Tabs */}
@@ -556,7 +609,11 @@ export default function Page() {
                 <Grid item xs={12} md={6}>
                   <Typography
                     variant="subtitle2"
-                    sx={{ mb: 2, fontWeight: "bold", fontSize: { xs: "0.8rem", md: "0.875rem" } }}
+                    sx={{
+                      mb: 2,
+                      fontWeight: "bold",
+                      fontSize: { xs: "0.8rem", md: "0.875rem" },
+                    }}
                   >
                     CLIENT INFORMATION
                   </Typography>
@@ -574,7 +631,9 @@ export default function Page() {
                     fullWidth
                     label="Company"
                     value={invoiceData.company}
-                    onChange={(e) => handleInputChange("company", e.target.value)}
+                    onChange={(e) =>
+                      handleInputChange("company", e.target.value)
+                    }
                     sx={{ mb: 2 }}
                     size="small"
                   />
@@ -590,7 +649,11 @@ export default function Page() {
                 <Grid item xs={12} md={6}>
                   <Typography
                     variant="subtitle2"
-                    sx={{ mb: 2, fontWeight: "bold", fontSize: { xs: "0.8rem", md: "0.875rem" } }}
+                    sx={{
+                      mb: 2,
+                      fontWeight: "bold",
+                      fontSize: { xs: "0.8rem", md: "0.875rem" },
+                    }}
                   >
                     INVOICE DETAILS
                   </Typography>
@@ -637,7 +700,10 @@ export default function Page() {
               >
                 <Typography
                   variant="subtitle2"
-                  sx={{ fontWeight: "bold", fontSize: { xs: "0.8rem", md: "0.875rem" } }}
+                  sx={{
+                    fontWeight: "bold",
+                    fontSize: { xs: "0.8rem", md: "0.875rem" },
+                  }}
                 >
                   ITEMS
                 </Typography>
@@ -660,7 +726,13 @@ export default function Page() {
                     elevation={1}
                     sx={{ p: 2, mb: 2, backgroundColor: "#fafafa" }}
                   >
-                    <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1 }}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        mb: 1,
+                      }}
+                    >
                       <Typography variant="caption" sx={{ fontWeight: "bold" }}>
                         Item {index + 1}
                       </Typography>
@@ -727,8 +799,12 @@ export default function Page() {
                 <Table>
                   <TableHead>
                     <TableRow>
-                      <TableCell sx={{ fontWeight: "bold" }}>Description</TableCell>
-                      <TableCell sx={{ fontWeight: "bold" }}>Unit Price</TableCell>
+                      <TableCell sx={{ fontWeight: "bold" }}>
+                        Description
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "bold" }}>
+                        Unit Price
+                      </TableCell>
                       <TableCell sx={{ fontWeight: "bold" }}>Qty</TableCell>
                       <TableCell sx={{ fontWeight: "bold" }} align="right">
                         Total
@@ -744,7 +820,11 @@ export default function Page() {
                             size="small"
                             value={item.description}
                             onChange={(e) =>
-                              handleItemChange(index, "description", e.target.value)
+                              handleItemChange(
+                                index,
+                                "description",
+                                e.target.value
+                              )
                             }
                             fullWidth
                           />
@@ -755,7 +835,11 @@ export default function Page() {
                             type="number"
                             value={item.unitPrice}
                             onChange={(e) =>
-                              handleItemChange(index, "unitPrice", e.target.value)
+                              handleItemChange(
+                                index,
+                                "unitPrice",
+                                e.target.value
+                              )
                             }
                             sx={{ width: 100 }}
                           />
@@ -815,7 +899,9 @@ export default function Page() {
                     <Typography>${calculateTax()}</Typography>
                   </Box>
                   <Divider sx={{ my: 2 }} />
-                  <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                  <Box
+                    sx={{ display: "flex", justifyContent: "space-between" }}
+                  >
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                       Amount Due
                     </Typography>
@@ -830,7 +916,11 @@ export default function Page() {
 
               <Typography
                 variant="subtitle2"
-                sx={{ mb: 2, fontWeight: "bold", fontSize: { xs: "0.8rem", md: "0.875rem" } }}
+                sx={{
+                  mb: 2,
+                  fontWeight: "bold",
+                  fontSize: { xs: "0.8rem", md: "0.875rem" },
+                }}
               >
                 BANK DETAILS
               </Typography>
