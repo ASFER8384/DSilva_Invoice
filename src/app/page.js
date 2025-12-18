@@ -526,7 +526,7 @@ export default function Page() {
             alt="Thank You"
             sx={{
               width: { xs: 300, sm: 300, md: 300 },
-              height: 300,
+              height: 250,
               objectFit: "contain",
             }}
             onError={(e) => {
