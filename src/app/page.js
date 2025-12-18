@@ -759,37 +759,37 @@ export default function Page() {
                     />
                     <Grid container spacing={2}>
                       {/* <Grid item xs={4}> */}
-                        <TextField
-                          fullWidth
-                          label="Price"
-                          type="number"
-                          value={item.unitPrice}
-                          onChange={(e) =>
-                            handleItemChange(index, "unitPrice", e.target.value)
-                          }
-                          size="small"
-                        />
+                      <TextField
+                        fullWidth
+                        label="Price"
+                        type="number"
+                        value={item.unitPrice}
+                        onChange={(e) =>
+                          handleItemChange(index, "unitPrice", e.target.value)
+                        }
+                        size="small"
+                      />
                       {/* </Grid> */}
                       {/* <Grid item xs={4}> */}
-                        <TextField
-                          fullWidth
-                          label="Qty"
-                          type="number"
-                          value={item.qty}
-                          onChange={(e) =>
-                            handleItemChange(index, "qty", e.target.value)
-                          }
-                          size="small"
-                        />
+                      <TextField
+                        fullWidth
+                        label="Qty"
+                        type="number"
+                        value={item.qty}
+                        onChange={(e) =>
+                          handleItemChange(index, "qty", e.target.value)
+                        }
+                        size="small"
+                      />
                       {/* </Grid> */}
                       {/* <Grid item xs={4}> */}
-                        <TextField
-                          fullWidth
-                          label="Total"
-                          value={`$${item.unitPrice * item.qty}`}
-                          size="small"
-                          disabled
-                        />
+                      <TextField
+                        fullWidth
+                        label="Total"
+                        value={`$${item.unitPrice * item.qty}`}
+                        size="small"
+                        disabled
+                      />
                       {/* </Grid> */}
                     </Grid>
                   </Paper>
@@ -997,31 +997,33 @@ export default function Page() {
           )}
 
           {/* Download Button */}
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              mt: { xs: 3, md: 4 },
-            }}
-          >
-            <Button
-              variant="contained"
-              size="large"
-              startIcon={<Download />}
-              onClick={downloadPDF}
+          {activeTab === 1 && (
+            <Box
               sx={{
-                px: { xs: 4, md: 6 },
-                py: 1.5,
-                backgroundColor: "#333",
-                fontSize: { xs: "0.875rem", md: "1rem" },
-                "&:hover": {
-                  backgroundColor: "#555",
-                },
+                display: "flex",
+                justifyContent: "center",
+                mt: { xs: 3, md: 4 },
               }}
             >
-              Download Invoice
-            </Button>
-          </Box>
+              <Button
+                variant="contained"
+                size="large"
+                startIcon={<Download />}
+                onClick={downloadPDF}
+                sx={{
+                  px: { xs: 4, md: 6 },
+                  py: 1.5,
+                  backgroundColor: "#333",
+                  fontSize: { xs: "0.875rem", md: "1rem" },
+                  "&:hover": {
+                    backgroundColor: "#555",
+                  },
+                }}
+              >
+                Download Invoice
+              </Button>
+            </Box>
+          )}
         </Paper>
       </Container>
     </Box>
